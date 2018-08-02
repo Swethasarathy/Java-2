@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] Strings) 
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the  degree in Fahrenheit: ");
+        double f = input.nextDouble();
+        double  c =(( 5 *(f - 32.0)) / 9.0);
+        System.out.println(f + " Fahrenheit in Celsius is " + c);
+    }
+}
