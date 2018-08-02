@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] Strings) 
+    {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter the time zone offset to GMT: ");
+    long zone = input.nextInt();
+    long ms = System.currentTimeMillis();
+    long s = ms / 1000;
+    long c = s % 60;
+    long tot = s / 60;
+    long min = tot % 60;
+    long hr = tot / 60;
+    long chr = ((tot + zone) % 24);
+    System.out.println("Current time is " + chr + ":" + min + ":" + c);
+    }
+}
