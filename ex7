@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main
+{
+        public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in); 
+        float time;
+		float mps,kph, mph;
+        System.out.print("Enter the distance in meters : ");
+	    float dist = scanner.nextFloat();
+        System.out.print("Enter the  hour : ");
+		float h = scanner.nextFloat();
+        System.out.print("Enter the  minutes  : ");
+		float m = scanner.nextFloat();
+        System.out.print("Enter the seconds : ");
+		float s = scanner.nextFloat();
+        time = (h*3600) + (m*60) + s;
+		mps = dist / time;
+		kph = ( dist/1000.0f ) / ( time/3600.0f );
+		mph = kph / 1.609f;
+        System.out.println("Speed in meters/second is "+mps);
+		System.out.println("Speed in km/h is "+kph);
+		System.out.println("Speed in miles/h is "+mph);
+		scanner.close();
+	}
+}
