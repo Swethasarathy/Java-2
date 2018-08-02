@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] Strings) {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter the  weight in pounds: ");
+    double w = input.nextDouble();
+    System.out.print("Enter the  height in inches: ");
+    double i = input.nextDouble();
+    double BMI = w * 0.45359237 / (i * 0.0254 * i * 0.0254);
+    System.out.print("Body Mass Index is " + BMI+"\n");
+    }
+}
